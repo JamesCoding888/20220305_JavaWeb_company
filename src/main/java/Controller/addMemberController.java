@@ -41,8 +41,7 @@ public class addMemberController extends HttpServlet {
 			member m = new member(username, password, address, name, phone, mobile);
 			new memberDao().addMember(m);
 			
-			response.sendRedirect("member/addMemberSuccess.jsp");
-			
+			response.sendRedirect("member/addMemberSuccess.jsp");			
 		}
 	}		
 }
